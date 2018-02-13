@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <title>Numerologia Simples</title>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+
+  </head>
+
+  <body style="background-color: black;">
+
+
+    <div class="row">
+        <div class="col-md-12" style="text-align: center;"> 
+            <p style="color:white"> Clique no botão e insira o nome, o resultado poderá ser maior do que 9.</p>
+            <p style="color:white"> Para obter o resultado final, somar o resultado que aparece na tela!</p>
+            <button href="#" onclick="fazer()" style="text-align: center; color: black">Clique Aqui</button>
+        </div>
+
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+    	function fazer(){
+    		var letras = " abcdefghijklmnopqrstuvwxyz";
+    		var numeros = [0,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9];
+    		var entrada = prompt("entre com o nome");
+
+    		var resposta = 0;
+    		for(var i = 0; i < entrada.length; i++){
+    			for(var j = 0; j < letras.length; j++){
+    				if(letras[j] == entrada[i]){
+    					resposta += numeros[j];
+    					break;
+    				}
+    			}
+    		}
+
+    		alert(resposta);
+    	}
+    </script>
+
+  </body>
+</html>

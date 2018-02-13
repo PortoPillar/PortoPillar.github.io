@@ -1,0 +1,305 @@
+@font-face{
+	font-family: Futura;
+	src: url(Fontes/Futura.ttf);
+}
+
+html, body{
+	font-family: Futura;
+	height: 100%;
+	background-color: rgb(26,26,26);
+	line-height: 1;
+}
+
+
+/* Menu */
+.logo{
+	height: 70px;
+	display: block;
+	vertical-align: inherit;
+	display: inline-block; 
+	margin-bottom: 1px; 
+	margin-top: 20px;
+}
+.logo_sm{
+	height: 70px;	
+	display: inline-block;
+	margin-bottom: 19px;
+	margin-top: 20px;
+	vertical-align: inherit;
+}
+.barra-direita{
+	border-right: 1px solid white;
+}
+
+#menu{
+	text-align: center;
+	width: 100%;
+}
+#menu ul {
+	display: inline-block;
+    list-style-type: none;
+    overflow: hidden;
+	margin-top: 35px; 
+	margin-right: 17px; 
+	margin-bottom: 43px;
+}
+#menu li {
+    float: left;
+
+}
+#menu li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 10pt;
+}
+#menu li a:visited{
+	color: white;
+}		
+#menu li a:hover {
+    text-decoration: none;
+    color: rgb(212,98,77);
+}
+
+
+
+
+/* Footer */
+
+.footer{
+	padding-top: 20px; 
+}
+.fav_footer{
+	 height: 120px;
+	 margin-left: auto;
+	 margin-right: auto;
+	 display: block;
+	 padding-bottom: 30px;
+} 
+
+.titulo_footer{
+	text-align: center;
+	padding-top: 10px;
+	font-size: 14pt;
+	color: rgb(212,98,77);
+}
+.footer_info{
+	padding-bottom: 40px;
+	text-align: center;
+	font-size: 10pt;
+	opacity: 0.9;
+}
+
+
+
+
+/* Carrossel Home */
+
+
+
+.carousel_home{
+	max-height: 800px;
+	height: 100%;
+	background-position: bottom;
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	background-color: black; 
+	width: 100%; 
+	object-fit: cover;
+	object-position: center;
+}
+.carousel_text{
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	margin-left: -15%;
+}
+
+
+
+/* CONTATO */
+
+.contato_container{
+
+	padding-top: 30px;
+	padding-bottom: 60px;
+	background-color: rgb(0,0,0);
+}
+.contato_text{
+
+	line-height: 2;
+	align-items: center;
+	color: white;
+	margin: auto;
+	text-align: center;
+}
+.contato_text h1{
+
+	font-size: 14pt;
+	color: rgb(212,98,77);
+}
+
+.contato_text p{
+	font-size: 10pt;
+	line-height: 1.1;
+}
+
+
+
+/* OBRAS */
+
+#portifolio{
+	max-height: 540px;
+	text-align: center;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	max-width: 100%;
+	vertical-align: middle;
+  	transition: all 0.51s ease;
+  	object-fit: cover;
+}
+.img_obras{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+
+.imagem_thumb{
+
+	display: block;
+		transform:scale(1);
+    -ms-transform:scale(1);
+    -moz-transform:scale(1);
+    -webkit-transform:scale(1);
+    -o-transform:scale(1);
+	-webkit-transition-duration: 0.51s;
+	-moz-transition-duration: 0.51s;
+	-ms-transition-duration: 0.51s;
+	-o-transition-duration: 0.51s;
+	transition-duration: 0.51s;	
+
+}
+
+#portifolio:hover .imagem_thumb{
+	cursor: pointer;
+    transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -o-transform:scale(1.1);
+
+
+}
+
+
+
+
+.text{
+
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+
+	background: rgba(26, 26, 26, 0.3);
+	text-align: center;
+	font-size: 2.8vmax;
+
+	vertical-align: middle;
+	opacity: 0;
+	-webkit-transition-duration: 0.51s;
+	-moz-transition-duration: 0.51s;
+	-ms-transition-duration: 0.51s;
+	-o-transition-duration: 0.51s;
+	transition-duration: 0.51s;
+	padding-top: 25%;
+}
+
+#portifolio:hover .text{
+	opacity: 1;
+} 
+
+
+/* CONSTRUÇÕES */
+
+#titulo_obras{
+	text-align: center;
+	color: white;
+	margin: auto;
+	width: 100%;
+	font-size: 25pt;
+}
+#titulo_obras:hover{
+	color: rgb(212,98,77);
+}
+.titulo_obras_sobre{
+	text-align: center;
+	color: white;
+	margin: auto;
+	width: 100%;
+	padding: 30px;
+	padding-top: 35px;
+}
+.titulo_obras_sobre h3{
+	font-size: 20pt;
+	padding-bottom: 20px;
+}
+.titulo_obras_sobre p{
+	font-size: 11pt;
+	line-height: 1.5;
+}
+
+/* SOBRE */
+
+.sobre_logo_container{
+
+	background-image: url(Imagens/Backgrounds/Sobre_01.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 30%;
+
+
+}
+.sobre_logo_container img{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+/* GERAL */
+.linha{
+	width: 30%;
+	height: 2px; 
+	background-color: white; 
+	margin: auto;
+}
+p{
+	color: white;
+	display: block;
+}
+
+a {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+	color: white;
+}		
+a:hover {
+    text-decoration: none;
+    color: rgb(212,98,77);
+}
+h1{
+	color: white;
+	text-align: center;
+	margin: auto;
+	padding: 20px; 
+}
